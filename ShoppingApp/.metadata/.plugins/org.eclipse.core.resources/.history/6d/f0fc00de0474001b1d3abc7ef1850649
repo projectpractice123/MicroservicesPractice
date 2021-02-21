@@ -1,0 +1,52 @@
+package com.example.customerservice.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Customer {
+	@Id
+	@GeneratedValue
+	private int cutomerId;
+	@Column(name = "customer_name")
+	private String cutomerName;
+	private String email;
+	@OneToOne(mappedBy = "post", cascade = CascadeType.ALL, orphanRemoval = true)
+	private PostDetails details;
+
+	public Customer() {
+	}
+
+	public Customer(int id, String cutomerName, String email) {
+		this.id = id;
+		this.cutomerName = cutomerName;
+		this.email = email;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+}

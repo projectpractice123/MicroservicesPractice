@@ -1,0 +1,13 @@
+spring.application.name=order-service
+server.port=3002
+eureka.client.serviceUrl.defaultZone=http://localhost:3000/eureka/
+
+
+### Springboot default configuration properties for the h2 database ###
+spring.datasource.url=jdbc:h2:mem:testdb2
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+### Property to enable the console for the h2 database ###
+### Browser url for h2 console - http://localhost:{serverport}/h2-console
+spring.h2.console.enabled=true

@@ -1,0 +1,18 @@
+package com.example.customerservice;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.example.customerservice.model.Order;
+
+@FeignClient(name = "order-service", fallback = OrderClientFallback.class)
+public interface OrderClient {
+    @GetMapping("/")
+    Object getOrdersForCustomer(@RequestParam int customerId);
+    
+    @PostMapping("/")
+    Object saveOrdersForCustomer(@RequestBody Order order);
+}	

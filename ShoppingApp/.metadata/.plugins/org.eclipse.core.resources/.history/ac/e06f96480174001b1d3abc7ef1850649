@@ -1,0 +1,39 @@
+package com.example.orderservice.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Order {
+	@Id
+	@GeneratedValue
+	private final int id;
+	
+	@Column(name = "customer_id")
+    private final int customerId;
+	
+	@Column(name = "product_name")
+    private final String productName;
+
+    public Order(final int id, final int customerId, final String name) {
+        this.id = id;
+        this.customerId = customerId;
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    public String getName() {
+        return name;
+    }
+    
+    
+}
