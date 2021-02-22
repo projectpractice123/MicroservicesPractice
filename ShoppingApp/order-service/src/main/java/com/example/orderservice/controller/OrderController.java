@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
  
 import com.example.orderservice.ResponseWrapper;
-import com.example.orderservice.model.Order;
+import com.example.microservice.shoppingdata.commons.entity.Order;
 import com.example.orderservice.service.OrderService;
 
 @RestController

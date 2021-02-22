@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.customerservice.OrderClient;
-import com.example.customerservice.model.Customer;
+import com.example.microservice.shoppingdata.commons.entity.Customer;
 import com.example.customerservice.service.CustomerService;
 
 @RestController

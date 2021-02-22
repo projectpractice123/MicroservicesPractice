@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.orderservice.model.Order;
+import com.example.microservice.shoppingdata.commons.entity.Order;
 import com.example.orderservice.repository.OrderRepository;
 
 @Service

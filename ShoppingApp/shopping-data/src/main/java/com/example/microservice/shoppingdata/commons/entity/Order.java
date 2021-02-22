@@ -6,21 +6,24 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.FetchType;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "order")
 public class Order {
 	@Id
 	@GeneratedValue
 	private int id;
-	
-	@ManyToOne
-	@JoinColumn(name = "fk_customer_id")
-	private int customerId;
 	private String productName;
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "customer_id")
+	private int customerId;
+
 
 	public Order(int id, int customerId, String productName) {
 		this.id = id;
-		this.customerId = customerId;
 		this.productName = productName;
 	}
 
@@ -32,14 +35,7 @@ public class Order {
 		this.id = id;
 	}
 
-	public int getCustomerId() {
-		return customerId;
-	}
-
-	public void setCustomerId(int customerId) {
-		this.customerId = customerId;
-	}
-
+	
 	public String getProductName() {
 		return productName;
 	}
@@ -48,6 +44,14 @@ public class Order {
 		this.productName = productName;
 	}
 
-	 
+	public int getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
+
+ 
 
 }

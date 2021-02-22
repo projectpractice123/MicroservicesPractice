@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.customerservice.model.Customer;
+import com.example.microservice.shoppingdata.commons.entity.Customer;
 import com.example.customerservice.repository.CustomerRepository;
 
 @Service
