@@ -5,14 +5,14 @@ import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.example.microservice.shoppingdata.commons.entity.Order;
+import com.example.microservice.shoppingdata.commons.entity.CustomerOrder;
 
  
 
 @Repository
-public interface OrderRepository extends CrudRepository<Order, Integer>{
+public interface OrderRepository extends CrudRepository<CustomerOrder, Integer>{
 	
-	public List<Order> findByCustomerId(int customerId);
+	public List<CustomerOrder> findByCustomerId(int customerId);
 
 }
 		

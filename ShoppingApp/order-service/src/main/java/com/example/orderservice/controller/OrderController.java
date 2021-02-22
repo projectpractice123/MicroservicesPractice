@@ -15,14 +15,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
  
 import com.example.orderservice.ResponseWrapper;
-import com.example.microservice.shoppingdata.commons.entity.Order;
+import com.example.microservice.shoppingdata.commons.entity.CustomerOrder;
 import com.example.orderservice.service.OrderService;
 
 @RestController
 public class OrderController {
 //	private final List<Order> orders = Arrays.asList(new Order(1, 1, "Product A"), new Order(2, 1, "Product B"),
 //			new Order(3, 2, "Product C"), new Order(4, 1, "Product D"), new Order(5, 2, "Product E"));
-	private List<Order> orders = new ArrayList<>();
+	private List<CustomerOrder> orders = new ArrayList<>();
 	@Autowired
 	OrderService orderService;
 	private final Environment environment;
@@ -38,7 +38,7 @@ public class OrderController {
 //	    }
 
 	@GetMapping("/{id}")
-	public Order getOrderById(@PathVariable int id) {
+	public CustomerOrder getOrderById(@PathVariable int id) {
 //	        return orders.stream()
 //	                     .filter(order -> order.getId() == id)
 //	                     .findFirst()
@@ -47,7 +47,7 @@ public class OrderController {
 	}
 
 	@GetMapping("/")
-	public ResponseWrapper<List<Order>> getOrdersForCustomer(@RequestParam(required = false) Integer customerId) {
+	public ResponseWrapper<List<CustomerOrder>> getOrdersForCustomer(@RequestParam(required = false) Integer customerId) {
 //		if (customerId != null) {
 //			return new ResponseWrapper<>(environment, orders.stream()
 //					.filter(order -> customerId.equals(order.getCustomerId())).collect(Collectors.toList()));
@@ -62,15 +62,15 @@ public class OrderController {
 	
 	
 	@PostMapping("/")
-	public int saveOrder(@RequestBody Order order) {
+	public int saveOrder(@RequestBody CustomerOrder order) {
 		orderService.saveOrUpdate(order);
 		return order.getId();
 	}
 
 	 
 	@PostMapping("/all")
-	public String saveOrders(@RequestBody List<Order> orders) {
-		for (Order order : orders)
+	public String saveOrders(@RequestBody List<CustomerOrder> orders) {
+		for (CustomerOrder order : orders)
 			orderService.saveOrUpdate(order);
 		return "Added Orders Successfully";
 	}

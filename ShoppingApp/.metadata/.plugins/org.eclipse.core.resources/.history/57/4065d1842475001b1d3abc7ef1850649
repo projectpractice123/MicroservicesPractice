@@ -1,0 +1,14 @@
+
+spring.application.name=customer-service
+server.port=3001
+eureka.client.serviceUrl.defaultZone=http://localhost:3000/eureka/
+feign.hystrix.enabled=true
+
+spring.datasource.url=jdbc:h2:tcp://localhost:8888/mem:mydb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.hibernate.ddl-auto=create
+
+
+

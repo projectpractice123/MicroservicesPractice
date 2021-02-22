@@ -55,7 +55,7 @@ public class CustomerController {
 	@PostMapping("/")
 	public int saveCustomer(@RequestBody Customer customer) {
 		customerService.saveOrUpdate(customer);
-		return customer.getCustomerId();
+		return customer.getId();
 	}
 
 	 
