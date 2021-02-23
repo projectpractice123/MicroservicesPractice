@@ -28,7 +28,7 @@ public class Customer {
 	 */
 	private static final long serialVersionUID = 1L;
 	@Id
-	//@GeneratedValue
+	@GeneratedValue
 	@Column(name = "id")
 	private int id;
 	private String name;

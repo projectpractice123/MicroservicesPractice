@@ -8082,3 +8082,49 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 2021-02-23 12:12:51,476 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2021-02-23 12:12:51,478 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-02-23 12:12:51,478 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\customer-service\src\test\resources
+2021-02-23 12:18:28,267 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:18:28,267 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\shopping-data\src\main\resources
+2021-02-23 12:18:28,268 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:18:28,268 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\shopping-data\src\test\resources
+2021-02-23 12:18:50,031 [Worker-703: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:18:50,032 [Worker-703: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\shopping-data\src\main\resources
+2021-02-23 12:18:50,033 [Worker-703: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:18:50,034 [Worker-703: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\shopping-data\src\test\resources
+2021-02-23 12:19:21,983 [Worker-688: Cleaning all projects] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/shopping-data: com.example.microservice:shopping-data:1.0.0 with classifier  to /shopping-data/target/classes
+2021-02-23 12:19:24,505 [Worker-701: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:19:24,506 [Worker-701: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:19:24,522 [Worker-701: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:19:24,528 [Worker-701: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:19:24,528 [Worker-701: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\config-server\src\test\resources
+2021-02-23 12:19:25,680 [Worker-706: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:19:25,680 [Worker-706: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:19:25,683 [Worker-706: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:19:25,689 [Worker-706: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:19:25,689 [Worker-706: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\discovery-service\src\test\resources
+2021-02-23 12:19:26,009 [Worker-701: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:19:26,010 [Worker-701: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:19:26,012 [Worker-701: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:19:26,017 [Worker-701: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:19:26,017 [Worker-701: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\gateway-service\src\test\resources
+2021-02-23 12:19:26,914 [Worker-702: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:19:26,915 [Worker-702: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\shopping-data\src\main\resources
+2021-02-23 12:19:26,916 [Worker-702: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:19:26,917 [Worker-702: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\shopping-data\src\test\resources
+2021-02-23 12:19:27,792 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:19:27,793 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:19:27,795 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:19:27,800 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:19:27,801 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\order-service\src\test\resources
+2021-02-23 12:19:30,021 [Worker-704: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/shopping-data: com.example.microservice:shopping-data:1.0.0 with classifier  to /shopping-data/target/classes
+2021-02-23 12:19:30,050 [Worker-704: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:19:30,050 [Worker-704: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:19:30,052 [Worker-704: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:19:30,055 [Worker-704: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:19:30,055 [Worker-704: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\customer-service\src\test\resources
+2021-02-23 12:22:46,088 [Worker-694: Launching customer-service - CustomerServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/shopping-data: com.example.microservice:shopping-data:1.0.0 with classifier null to /shopping-data/target/classes
+2021-02-23 12:22:47,770 [Worker-694: Launching customer-service - CustomerServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/shopping-data: com.example.microservice:shopping-data:1.0.0 with classifier null to /shopping-data/target/classes
+2021-02-23 12:22:49,300 [Worker-694: Launching customer-service - CustomerServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/shopping-data: com.example.microservice:shopping-data:1.0.0 with classifier null to /shopping-data/target/classes
+2021-02-23 12:23:31,400 [Worker-689: Check for devtools] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/shopping-data: com.example.microservice:shopping-data:1.0.0 with classifier  to /shopping-data/target/classes
+2021-02-23 12:23:33,811 [Worker-678: Launching order-service - OrderServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/shopping-data: com.example.microservice:shopping-data:1.0.0 with classifier null to /shopping-data/target/classes
+2021-02-23 12:23:35,172 [Worker-678: Launching order-service - OrderServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/shopping-data: com.example.microservice:shopping-data:1.0.0 with classifier null to /shopping-data/target/classes
+2021-02-23 12:23:36,329 [Worker-678: Launching order-service - OrderServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/shopping-data: com.example.microservice:shopping-data:1.0.0 with classifier null to /shopping-data/target/classes

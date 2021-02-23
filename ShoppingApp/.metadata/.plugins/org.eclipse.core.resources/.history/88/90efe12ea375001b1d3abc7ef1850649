@@ -20,7 +20,7 @@ import javax.persistence.Table;
 @Table(name = "customer_order")
 public class CustomerOrder {
 	@Id
-	//@GeneratedValue
+	@GeneratedValue
 	private int id;
 	private String productName;
 	
