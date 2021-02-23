@@ -10,9 +10,9 @@ import com.example.microservice.shoppingdata.commons.entity.CustomerOrder;
  
 
 @Repository
-public interface OrderRepository extends CrudRepository<CustomerOrder, Integer>{
+public interface OrderRepository extends CrudRepository<CustomerOrder, Integer> , OrderRepositoryCustom{
 	
-	public List<CustomerOrder> findByCustomerId(int customerId);
+	
 
 }
 		

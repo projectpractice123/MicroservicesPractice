@@ -1,0 +1,20 @@
+package com.example.orderservice.repository;
+
+
+
+@Repository
+@Transactional(readOnly = true)
+public class OrderRepositoryImpl implements EmployeeRepositoryCustom {
+
+    @PersistenceContext
+    EntityManager entityManager;
+	
+    @Override
+    public List<Employee> findByCustomerId(int customerId){
+        Query query = entityManager.createNativeQuery("SELECT em.* FROM spring_data_jpa_example.employee as em " +
+                "WHERE em.firstname LIKE ?", Employee.class);
+        query.setParameter(1, firstName + "%");
+
+        return query.getResultList();
+    }
+}

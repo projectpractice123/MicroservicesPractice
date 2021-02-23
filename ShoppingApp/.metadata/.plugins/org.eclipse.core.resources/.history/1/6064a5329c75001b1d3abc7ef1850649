@@ -1,0 +1,27 @@
+package com.example.orderservice.repository;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.example.microservice.shoppingdata.commons.entity.CustomerOrder;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import java.util.List;
+
+
+@Repository
+@Transactional(readOnly = true)
+public class OrderRepositoryImpl implements OrderRepositoryCustom {
+
+    @PersistenceContext
+    EntityManager entityManager;
+	
+    public List<CustomerOrder> findByCustomerId(int customerId){
+        Query query = entityManager.createNativeQuery("SELECT co.* FROM mydb.CUSTOMER_ORDER  as co " +
+                "WHERE co.cutomer_id = ?", CustomerOrder.class);
+        query.setParameter(1, customerId + "%");
+
+        return query.getResultSet();
+    }
+}

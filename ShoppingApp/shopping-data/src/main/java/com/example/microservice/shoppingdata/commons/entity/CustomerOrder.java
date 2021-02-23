@@ -11,6 +11,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Column;	
 import javax.persistence.ManyToOne;
 import javax.persistence.FetchType;
 import javax.persistence.Table;
@@ -24,15 +25,17 @@ public class CustomerOrder {
 	private String productName;
 	
 //	@JsonManagedReference
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "customer_id")
-	private  Customer customer;
+	//@ManyToOne(fetch = FetchType.LAZY)
+//	@JoinColumn(name = "customer_id")
+	//@Column(name = "customer_id")
+//	private  int customerId;
+	//private  Customer customer;
 	public CustomerOrder() {}
 
-	public CustomerOrder(int id, int customerId, String productName) {
+	public CustomerOrder(int id, String productName) {
 		this.id = id;
 		this.productName = productName;
-		this.customer.setId(customerId);
+		//this.customerId=customerId;
 	}
 
 	public int getId() {
@@ -50,14 +53,6 @@ public class CustomerOrder {
 
 	public void setProductName(String productName) {
 		this.productName = productName;
-	}
-
-	public Customer getCustomer() {
-		return customer;
-	}
-
-	public void setCustomer(Customer customer) {
-		this.customer = customer;
 	}
 
 	 
