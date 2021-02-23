@@ -27,12 +27,11 @@ public class CustomerOrder {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "customer_id")
 	private  Customer customer;
-	public CustomerOrder() {}
+
 
 	public CustomerOrder(int id, int customerId, String productName) {
 		this.id = id;
 		this.productName = productName;
-		this.customer.setId(customerId);
 	}
 
 	public int getId() {

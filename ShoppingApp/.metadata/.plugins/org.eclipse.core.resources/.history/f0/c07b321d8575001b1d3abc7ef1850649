@@ -29,10 +29,9 @@ public class CustomerOrder {
 	private  Customer customer;
 	public CustomerOrder() {}
 
-	public CustomerOrder(int id, int customerId, String productName) {
+	public CustomerOrder(int id , String productName) {
 		this.id = id;
 		this.productName = productName;
-		this.customer.setId(customerId);
 	}
 
 	public int getId() {
