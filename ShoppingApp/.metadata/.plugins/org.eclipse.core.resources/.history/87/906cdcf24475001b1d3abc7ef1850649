@@ -1,0 +1,2 @@
+spring.cloud.config.name=customer-service
+spring.cloud.config.uri=http://netflix-configconfig-server:8888

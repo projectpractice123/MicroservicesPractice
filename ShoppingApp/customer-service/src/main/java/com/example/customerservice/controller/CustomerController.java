@@ -1,6 +1,8 @@
 package com.example.customerservice.controller;
 
  
+import java.util.Set;
+import org.springframework.http.MediaType;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,19 +30,20 @@ public class CustomerController {
 		this.orderClient = orderClient;
 	}
 
-	@GetMapping("/")
+	@GetMapping(path ="/" , produces= {MediaType.APPLICATION_JSON_VALUE })
 	public List<Customer> getAllCustomers() {
 		return customerService.getAllCustomer();
 	}
 
-	@GetMapping("/{id}")
+	@GetMapping(path ="/{id}", produces= {MediaType.APPLICATION_JSON_VALUE })
 	public Customer getCustomerById(@PathVariable int id) {
 		return customerService.getCustomerById(id);
 //		return customers.stream().filter(customer -> customer.getId() == id).findFirst()
 //				.orElseThrow(IllegalArgumentException::new);
 	}
 	
-	@GetMapping("/{id}/orders")
+	//@GetMapping("/{id}/orders")
+	@GetMapping(path =  "/{id}/orders", produces= {MediaType.APPLICATION_JSON_VALUE })
     public Object getOrdersForCustomer(@PathVariable int id) {
         return orderClient.getOrdersForCustomer(id);
     }
@@ -51,20 +54,29 @@ public class CustomerController {
 //		customerService.delete(id);
 //	}
 	
-	 
-	@PostMapping("/")
+//	@PostMapping("/orders")
+//	public int saveCustomerwithoneOrder(@RequestBody Customer customer) {
+//		customerService.saveOrUpdate(customer);
+//		orderClient.saveAllOrdersForCustomer(customer.getOrders());
+//		
+//		return customer.getId();
+//	}
+	
+	@PostMapping(path = "/{id}/orders",consumes = {MediaType.APPLICATION_JSON_VALUE } )
 	public int saveCustomer(@RequestBody Customer customer) {
 		customerService.saveOrUpdate(customer);
+		orderClient.saveAllOrdersForCustomer(customer.getOrders());
+		
 		return customer.getId();
 	}
 
 	 
-	@PostMapping("/all")
-	public String saveCustomers(@RequestBody List<Customer> customers) {
-		for (Customer customer : customers)
-			customerService.saveOrUpdate(customer);
-		return "Add Customers Successfully";
-	}
+//	@PostMapping("/orders/all")
+//	public String saveCustomers(@RequestBody Set<Customer> customers) {
+//		for (Customer customer : customers)
+//			customerService.saveOrUpdate(customer);
+//		return "Add Customers Successfully";
+//	}
 
 //	@PostMapping("/{id}/orders")
 //	public Object saveOrderForCustomer(@RequestBody Order order) {

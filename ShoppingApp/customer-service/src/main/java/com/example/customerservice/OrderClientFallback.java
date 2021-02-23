@@ -1,11 +1,11 @@
 package com.example.customerservice;
 
 import org.springframework.stereotype.Component;
-
+import com.example.microservice.shoppingdata.commons.entity.CustomerOrder;
  
 
 import java.util.Collections;
-import java.util.List;
+import java.util.Set;
 
 @Component
 public class OrderClientFallback implements OrderClient {
@@ -14,15 +14,15 @@ public class OrderClientFallback implements OrderClient {
 		return Collections.emptyList();
 	}
 
-//	@Override
-//	public Object saveOrdersForCustomer(Order order) {
-//		// TODO Auto-generated method stub
-//		return Collections.emptyList();
-//	}
-//
-//	@Override
-//	public Object saveAllOrdersForCustomer(List<Order> order) {
-//		// TODO Auto-generated method stub
-//		return Collections.emptyList();
-//	}
+	@Override
+	public Object saveOrderForCustomer(CustomerOrder order) {
+		// TODO Auto-generated method stub
+		return Collections.emptyList();
+	}
+
+	@Override
+	public Object saveAllOrdersForCustomer(Set<CustomerOrder> order) {
+		// TODO Auto-generated method stub
+		return Collections.emptyList();
+	}
 }

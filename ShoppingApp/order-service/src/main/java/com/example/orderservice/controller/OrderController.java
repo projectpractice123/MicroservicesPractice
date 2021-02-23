@@ -3,6 +3,7 @@ package com.example.orderservice.controller;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,7 +70,7 @@ public class OrderController {
 
 	 
 	@PostMapping("/all")
-	public String saveOrders(@RequestBody List<CustomerOrder> orders) {
+	public String saveAllOrdersForCustomer(@RequestBody Set<CustomerOrder> orders) {
 		for (CustomerOrder order : orders)
 			orderService.saveOrUpdate(order);
 		return "Added Orders Successfully";

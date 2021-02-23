@@ -1,7 +1,13 @@
 package com.example.microservice.shoppingdata.commons.entity;
 
  
+import java.io.Serializable;
+
 import javax.persistence.Entity;
+
+//import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -17,6 +23,7 @@ public class CustomerOrder {
 	private int id;
 	private String productName;
 	
+//	@JsonManagedReference
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "customer_id")
 	private  Customer customer;

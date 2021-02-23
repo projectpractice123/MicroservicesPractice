@@ -1,9 +1,11 @@
 package com.example.microservice.shoppingdata.commons.entity;
 
 import javax.persistence.Entity;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -16,10 +18,15 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import javax.persistence.CascadeType;
-
+//import com.fasterxml.jackson.annotation.JsonIgnoreProperties;	
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 @Entity
 @Table(name = "customer")
 public class Customer {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue
 	@Column(name = "id")
@@ -28,8 +35,8 @@ public class Customer {
 	private String email;
 	
 	
- 
-	@OneToMany(mappedBy = "customer_id", fetch = FetchType.LAZY )
+	//@JsonManagedReference
+	@OneToMany(mappedBy = "customer", fetch = FetchType.LAZY )
 	private Set<CustomerOrder> orders = new HashSet<CustomerOrder>();
 	
 	public Customer() {

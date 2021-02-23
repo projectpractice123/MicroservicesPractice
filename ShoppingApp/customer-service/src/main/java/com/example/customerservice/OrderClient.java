@@ -1,12 +1,13 @@
 package com.example.customerservice;
 
-import java.util.List;
+import java.util.Set;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
+import com.example.microservice.shoppingdata.commons.entity.CustomerOrder;
 
  
 
@@ -15,9 +16,9 @@ public interface OrderClient {
     @GetMapping("/")
     Object getOrdersForCustomer(@RequestParam Integer customerId);
     
-//    @PostMapping("/")
-//    Object saveOrdersForCustomer(@RequestBody Order order);
-//    
-//    @PostMapping("/all")
-//    Object saveAllOrdersForCustomer(@RequestBody List<Order> order);
+    @PostMapping("/")
+    Object saveOrderForCustomer(@RequestBody CustomerOrder order);
+    
+    @PostMapping("/all")
+    Object saveAllOrdersForCustomer(@RequestBody Set<CustomerOrder> order);
 }	
