@@ -1,12 +1,28 @@
 package com.example.customerservice;
+
 import org.springframework.stereotype.Component;
+import com.example.microservice.shoppingdata.commons.entity.CustomerOrder;
+ 
 
 import java.util.Collections;
+import java.util.Set;
 
 @Component
 public class OrderClientFallback implements OrderClient {
-    @Override
-    public Object getOrdersForCustomer(int customerId) {
-        return Collections.emptyList();
-    }
+	@Override
+	public Object getOrdersForCustomer(Integer customerId) {
+		return Collections.emptyList();
+	}
+
+	@Override
+	public Object saveOrderForCustomer(CustomerOrder order) {
+		// TODO Auto-generated method stub
+		return Collections.emptyList();
+	}
+
+	@Override
+	public Object saveAllOrdersForCustomer(Set<CustomerOrder> order) {
+		// TODO Auto-generated method stub
+		return Collections.emptyList();
+	}
 }
