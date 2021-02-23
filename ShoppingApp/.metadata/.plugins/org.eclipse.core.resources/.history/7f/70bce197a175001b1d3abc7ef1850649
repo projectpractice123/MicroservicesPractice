@@ -1,0 +1,25 @@
+package com.example.customerservice;
+
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import com.example.microservice.shoppingdata.commons.entity.CustomerOrder;
+
+ 
+
+@FeignClient(name = "order-service", fallback = OrderClientFallback.class)
+public interface OrderClient {
+    @GetMapping("/")
+    List<CustomerOrder> getOrdersForCustomer(@RequestParam Integer customerId);
+    
+    @PostMapping("/")
+    Object saveOrderForCustomer(@RequestBody CustomerOrder order);
+    
+    @PostMapping("/all")
+    Object saveAllOrdersForCustomer(@RequestBody Set<CustomerOrder> order);
+}	

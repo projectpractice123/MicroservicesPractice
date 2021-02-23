@@ -8032,3 +8032,53 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 2021-02-23 11:49:52,515 [Worker-693: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\shopping-data\src\main\resources
 2021-02-23 11:49:52,517 [Worker-693: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-02-23 11:49:52,517 [Worker-693: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\shopping-data\src\test\resources
+2021-02-23 12:00:13,108 [Worker-696: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:00:13,110 [Worker-696: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:00:13,113 [Worker-696: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:00:13,115 [Worker-696: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:00:13,116 [Worker-696: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\order-service\src\test\resources
+2021-02-23 12:02:18,951 [Worker-695: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:02:18,953 [Worker-695: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:02:18,956 [Worker-695: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:02:18,958 [Worker-695: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:02:18,959 [Worker-695: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\customer-service\src\test\resources
+2021-02-23 12:03:53,944 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:03:53,946 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:03:53,948 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:03:53,951 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:03:53,951 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\customer-service\src\test\resources
+2021-02-23 12:04:44,422 [Worker-695: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:04:44,424 [Worker-695: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:04:44,427 [Worker-695: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:04:44,429 [Worker-695: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:04:44,429 [Worker-695: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\customer-service\src\test\resources
+2021-02-23 12:07:26,685 [Worker-698: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:07:26,687 [Worker-698: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:07:26,690 [Worker-698: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:07:26,692 [Worker-698: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:07:26,692 [Worker-698: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\customer-service\src\test\resources
+2021-02-23 12:07:46,381 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:07:46,383 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:07:46,386 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:07:46,388 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:07:46,389 [Worker-694: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\customer-service\src\test\resources
+2021-02-23 12:08:31,870 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:08:31,872 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:08:31,876 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:08:31,878 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:08:31,878 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\customer-service\src\test\resources
+2021-02-23 12:08:58,355 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:08:58,356 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:08:58,359 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:08:58,361 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:08:58,361 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\customer-service\src\test\resources
+2021-02-23 12:11:19,565 [Worker-696: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:11:19,567 [Worker-696: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:11:19,569 [Worker-696: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:11:19,571 [Worker-696: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:11:19,572 [Worker-696: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\customer-service\src\test\resources
+2021-02-23 12:12:51,472 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:12:51,473 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:12:51,476 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-02-23 12:12:51,478 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-23 12:12:51,478 [Worker-697: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ShoppingApp\customer-service\src\test\resources

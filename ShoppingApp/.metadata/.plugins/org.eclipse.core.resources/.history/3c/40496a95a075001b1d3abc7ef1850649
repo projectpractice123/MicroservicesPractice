@@ -20,7 +20,7 @@ public class OrderRepositoryImpl implements OrderRepositoryCustom {
     public List<CustomerOrder> findByCustomerId(int customerId){
         Query query = entityManager.createNativeQuery("SELECT co.* FROM  CUSTOMER_ORDER  as co " +
                 "WHERE co.customer_id = ?", CustomerOrder.class);
-        query.setParameter(1, customerId );
+        query.setParameter(1, customerId + "%");
 
         return query.getResultList();
     }
